@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style>
+        .b{
+            background-color:black;
+            color:white;
+            border:2px solid yellow;
+            font-size: 20px;
+        }
+        .active{
+            background-color:blue;
+            color:black;
+            font-size:25px;
+        }
+        .hide{
+            display:none;
+        }
+    </style>
 </head>
 <body>
-    <button onclick="changeContent()">Add content</button>
-    <h1 id="my-h1">DOM</h1>
-    <h1 class="my-h2">DOM 2</h1>
-    <h1 class="my-h2">DOM 3</h1>
-
-    <button onclick="showH1()">Show h1</button>
-    <button onclick="hideH1()">Hide h1</button>
-
+    <button onclick="addClass()">Add class</button>
+    <button onclick="removeClass()">Remove class</button>
+    <button onclick="toggleClass()">Toggle class</button>
+    <button onclick="hideShow()">Show/Hide</button>
+    <h1 class="my-h1" id="heading">h1 with class my-hq</h1>
     <script src="script.js"></script>
 </body>
 </html>

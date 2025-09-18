@@ -1,17 +1,19 @@
-// title
-document.title
-//to change title
-document.title = "New Title"
+const headingE1 = document.getElementById("heading");
 
-//head
-document.head
-//to change head
-document.head.innerHTML = "<h1>Heading</h1>"
+console.log(headingE1.classList.Contains("my-h1"));
 
-//body
-document.body
-//to change body
-document.body.innerHTML = "<p>Paragraph</p>"
+function addClass(){
+    headingE1.classList.add("b");
+}
 
-//html
-document.documentElement
+function removeClass(){
+    headingE1.classList.remove("b");
+}
+
+function toggleClass(){
+    headingE1.classList.toggle("active");
+}
+
+function hideShow(){
+    headingE1.classList.toggle("hide");
+}
